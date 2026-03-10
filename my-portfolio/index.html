@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRISTU SAI KIRAN | Freelance Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="#hero">SRISTU</a>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <button class="mode-toggle" id="modeToggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀</span>
+          <span class="icon-moon">🌙</span>
+        </button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-content">
+          <p class="eyebrow">FREELANCE WEB DEVELOPER | AI BUILDER | PROBLEM SOLVER</p>
+          <h1>SRISTU SAI KIRAN</h1>
+          <h2 class="typed">I am <span id="typed-text"></span></h2>
+          <p class="tagline">“What you manifest, you become”</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">Hire Me</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+          </div>
+          <div class="badge-row">
+            <span class="badge">Apple-style minimal</span>
+            <span class="badge">AI-ready builds</span>
+            <span class="badge">Conversion-focused</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="glass-card">
+            <p class="quote">“I observe the world carefully and fix what feels off with intelligence and creativity.”</p>
+            <div class="stat">
+              <span class="number">₹20k–₹1L</span>
+              <span class="label">Project range</span>
+            </div>
+            <div class="stat">
+              <span class="number">48h</span>
+              <span class="label">Rapid prototypes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-header">
+          <p class="eyebrow">About</p>
+          <h3>Calm precision, bold outcomes.</h3>
+        </div>
+        <div class="about-grid">
+          <div class="card">
+            <h4>Philosophy</h4>
+            <p>I observe the world carefully. When I see something that isn’t right, I try to improve it using my intelligence and creativity. My goal is to find the best solutions that make people’s lives better—because their happiness brings me happiness.</p>
+          </div>
+          <div class="card accent">
+            <h4>Difference</h4>
+            <p><strong>Normal freelancers:</strong> “Tell me what to build.”</p>
+            <p><strong>ME:</strong> I’ll find what’s wrong and make it better.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section skills" id="skills">
+        <div class="section-header">
+          <p class="eyebrow">Skills</p>
+          <h3>Sharp skills, smooth delivery.</h3>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+          <div class="skill-card">UI/UX</div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="section-header">
+          <p class="eyebrow">Services</p>
+          <h3>Built to convert and scale.</h3>
+        </div>
+        <div class="service-grid">
+          <div class="service-card">
+            <h4>Website Development</h4>
+            <p>Full-stack ready frontends that are fast, accessible, and engineered for impact.</p>
+          </div>
+          <div class="service-card">
+            <h4>Business Landing Pages</h4>
+            <p>Conversion-led pages with crisp storytelling and analytics baked in.</p>
+          </div>
+          <div class="service-card">
+            <h4>Portfolio Websites</h4>
+            <p>Showcase your edge with editorial layouts and motion that feels effortless.</p>
+          </div>
+          <div class="service-card">
+            <h4>Website Redesign</h4>
+            <p>Audit, refine, and relaunch with a premium aesthetic and measurable uplift.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section projects" id="projects">
+        <div class="section-header">
+          <p class="eyebrow">Projects</p>
+          <h3>Dynamic, living portfolio.</h3>
+        </div>
+
+        <form class="project-form" id="projectForm">
+          <input type="text" id="projectName" placeholder="Project Name" required>
+          <input type="url" id="projectLink" placeholder="Project Link" required>
+          <select id="projectCategory" required>
+            <option value="Landing Pages">Landing Page</option>
+            <option value="Business Sites">Business Site</option>
+            <option value="Portfolio Sites">Portfolio Site</option>
+          </select>
+          <button type="submit" class="btn primary">Add Project</button>
+        </form>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Landing Pages">Landing Pages</button>
+          <button class="filter-btn" data-filter="Business Sites">Business Sites</button>
+          <button class="filter-btn" data-filter="Portfolio Sites">Portfolio Sites</button>
+        </div>
+
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="section testimonials" id="testimonials">
+        <div class="section-header">
+          <p class="eyebrow">Testimonials</p>
+          <h3>Trusted by ambitious teams.</h3>
+        </div>
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p>“Sristu transformed our landing page in days. Bounce rates dropped 32% and demos doubled. Calm, decisive, and premium.”</p>
+            <span class="author">Ananya Rao — Founder, Finlyst</span>
+          </div>
+          <div class="testimonial-card">
+            <p>“He spotted gaps we hadn’t noticed and shipped a polished experience without hand-holding. Felt like an in-house lead.”</p>
+            <span class="author">Rohan Mehta — Product Lead, NextWave</span>
+          </div>
+          <div class="testimonial-card">
+            <p>“Pixel-perfect UI, smooth animations, and clear communication. Our clients now think we’re ‘the premium option’.”</p>
+            <span class="author">Kritika Sharma — Director, Studio North</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section resume" id="resume">
+        <div class="resume-card">
+          <div>
+            <p class="eyebrow">Resume</p>
+            <h3>Concise story of impact.</h3>
+            <p>Need the highlights fast? Download a one-page summary of recent wins, stack, and delivery approach.</p>
+          </div>
+          <a class="btn primary" href="assets/SristuSaiKiran-Resume.pdf" download>Download Resume</a>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h3>Let’s build the next release.</h3>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:saikiransristu@gmail.com">
+            <span class="icon">✉</span>
+            <div>
+              <p>Email</p>
+              <strong>saikiransristu@gmail.com</strong>
+            </div>
+          </a>
+          <a class="contact-card" href="tel:+918374293417">
+            <span class="icon">☎</span>
+            <div>
+              <p>Phone</p>
+              <strong>+91 8374293417</strong>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <strong>SRISTU SAI KIRAN</strong>
+        <p>Freelance Web Developer | AI Builder | Problem Solver</p>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Dribbble">Dribbble</a>
+      </div>
+      <p class="copy">© <span id="year"></span> All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
